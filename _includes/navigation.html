@@ -1,0 +1,18 @@
+<!-- Have a look at _config.yml. There I have defined the navigation. -->
+{% for link in site.navigation %}
+   	{% assign current = nil %}
+	{% if page.url contains link.path %}
+	  	{% assign current = 'current' %}
+   	{% endif %}
+	{% if page.url=='/' and link.path=='about' %}
+	   {% assign current = 'current' %}
+	{% endif %}
+
+    <a class="extra {{ current }}" href="{{ link.url }}">
+		{{ link.text }}
+	</a>
+
+{% endfor %}
+
+
+<!--    -->
