@@ -45,7 +45,7 @@ experience in iterative approach to software development.
 * **Love and passion for what I do:** I don't see my job as a source of money by as source of
 happiness.
 * **Strong inter-cultural and social understanding:** I have the privilege of having many friends and
-working with many people from different nationality. I have two nationalities myself (German,
+working with many people from different nationalities. I have two nationalities myself (German,
 Iranian). I set a high value on understanding the people and why they do what they do.
 * **Friendliness and team spirit:** Friendliness, respect, mutual appreciation, and team spirit have the highest value for me.
 
