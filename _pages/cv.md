@@ -97,7 +97,8 @@ construction projects (2005) <br/>
 Freelance project
 
 **Software Project Management**
-* Project management of innovative software projects for industrial partners with team sizes up to 10 developers. Very tight schedule. Different domains such as Indoor Navigation, Smart Environments, Internet of Things, Augmented Reality, Wearable Computing, and Artificial Intelligence <br/>
+* Project management of innovative software projects for industrial partners (2015-2020) <br/>
+Team sizes up to 10 developers. Very tight schedule. Different domains such as Indoor Navigation, Smart Environments, Internet of Things, Augmented Reality, Wearable Computing, and Artificial Intelligence <br/>
 Chair of Applied Software Engineering, Faculty of Computer Science, TUM
 
 **Research**
