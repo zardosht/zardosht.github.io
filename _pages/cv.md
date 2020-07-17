@@ -64,19 +64,78 @@ For a PDF copy of my C.V. please send me a message on LinkedIn or send me a mail
 
 ## Selected Work Experience
 
-**Software Development**
+**Software Development and Consulting**
 
+* Design and development of an authoring system for interactive tabletops (2018-2019) <br/>
+Ph.D. thesis project; Chair of Applied Software Engineering, Faculty of Computer Science, TUM
+
+* Design and development of an assistance system for manual assembly (2017) <br/>
+Ph.D. thesis project; Chair of Applied Software Engineering, Faculty of Computer Science, TUM
+
+* Consulting, design, and development by health-check, optimization, re-engineering, and
+integration of legacy enterprise software systems in financial and insurance sector (2014-2015) <br/>
+itestra GmbH, Munich
+
+* Design and development of a monitoring and control system for remote software processes (2012) <br/>
+Chair of Applied Software Engineering, Faculty of Computer Science, TUM
+
+* Development of an intelligent content and document management system for automated recognition, processing, and archiving of large paper correspondence of enterprise customers (2009-2011) <br/>
+Brainsphere InformationWorks GmbH, Munich
+
+* Development of a unified CASE tool (unicase.org); Eclipse plug-in development (2008-2009) <br/>
+Chair of Applied Software Engineering, Faculty of Computer Science, TUM
+
+* Development of an innovative content management system for legal cases (2007-2008) <br/>
+Normfall GmbH, Munich
+
+* Consulting in design and implementation of a simulation program for
+fluid movement in wood structures (2006)  <br/>
+Faculty of Natural Resources, University of Tehran Summer 
+
+* Requirements elicitation, design and implementation of an accounting software for
+construction projects (2005) <br/>
+Freelance project
 
 **Software Project Management**
-
+* Project management of innovative software projects for industrial partners with team sizes up to 10 developers. Very tight schedule. Different domains such as Indoor Navigation, Smart Environments, Internet of Things, Augmented Reality, Wearable Computing, and Artificial Intelligence <br/>
+Chair of Applied Software Engineering, Faculty of Computer Science, TUM
 
 **Research**
+* Doctoral Researcher (2015-2020) <br/>
+&ndash; Research and publication in the area of Human-Computer Interaction, Augmented Reality and Interactive Tabletops, Ubiquitous Computing, Wearable Computing <br/>
+&ndash; Dissertation: ISAR: An Authoring System for Interactive Tabletops. Designs and development of an augmented reality interactive tabletop based on a camera-project setup <br/>
+&ndash; Supervision of several bachelor and master theses in areas of Augmented Reality, Interactive Tabletops, Internet of Things <br/>
+Chair of Applied Software Engineering, Faculty of Computer Science, TUM
 
+* EU-Project MUSES (2012-2013) <br/>
+  Development of a platform for supporting context-aware security in mobile systems and services; Research and publication of related workpackage documents  <br/>
+  Chair for Mobile Services and Software Engineering, Department of Computer Science, University of Hamburg
+
+* EU-Project FastFix (2011-2012) <br/>
+  Development of a framework for monitoring and control for remote software maintenance  <br/>
+  Chair of Applied Software Engineering, Faculty of Computer Science, TUM
+
+* Unicase: a unified CASE tool (2008-2009) <br/>
+  Development and publication on automated task triage and automated generation of sprint plans <br/>
+  Chair of Applied Software Engineering, Faculty of Computer Science, TUM
 
 **Teaching**
+* Teaching Assistant / Scientific Staff (2015-2020) <br/>
+&ndash; Teaching and organization of Software Engineering courses: Introduction to Software Engineering; Design Patterns <br/>
+&ndash; Seminar course on Ubiquitous Computing <br/>
+&ndash; Practical courses on project-based software development in different areas (AR, Indoor Navigation, IoT, Smart Environments, Wearables Computing) <br/>
+&ndash; Supervision of several bachelor and master theses in areas of Augmented Reality, Interactive Tabletops, Internet of Things <br/>
+Chair of Applied Software Engineering, Faculty of Computer Science, TUM
 
+* Tutor for lecture Introduction to Software Engineering (2009, 2011)
+ Faculty of Computer Science, TUM
+
+* Instructor of a programming primer course with VB .Net for doctoral students (2006) <br/>
+Faculty of Natural Resources, University of Tehran 
 
 **Technical Writing and Translation**
+* Working at Shabakeh Magazine (iranian computer monthly) as translator and author (2004-2006)
+* Translation of books “Build Your Own Website” and “Home Networking Annoyances” and “Introducing Windows Server 2003” into persian (2004-2006)
 
 
 
