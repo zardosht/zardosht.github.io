@@ -8,7 +8,7 @@ I list here some of the interesting recent and past projects I have worked on. C
 
 
 
-## ISAR: An Authoring System for Interactive Tabletops (2018-2019)
+# ISAR: An Authoring System for Interactive Tabletops (2018-2019)
 ISAR is an augmented Reality (AR) authoring system for interactive tabletops.
 
 Authoring systems for AR try to compensate the complexity and challenge of development of AR applications by providing frameworks that can be reused. These frameworks are available at different levels of abstraction, from software libraries to high-level GUI solutions
@@ -61,7 +61,28 @@ The source code of ISAR can be found [here](https://github.com/zardosht/isar) an
 
 
 
-## 2D Object Tracking (2018)
+# 2D Object Tracking (2018)
+As part of [ISAR](#isar-an-authoring-system-for-interactive-tabletops-2018-2019), I wrote code for tracking of the objects put on the tabletop. The tracking code uses Yolo V2 for object detection. Pose estimation is done using feature matching (AKAZE features) and OpenCV's `estimateAffineTransform`. Pose refinement is done through image alignment using Enhanced Correlation Coefficient (ECC).
+
+[![2D Object Tracking](https://img.youtube.com/vi/FpB5MsbWenY/0.jpg)](https://www.youtube.com/watch?v=FpB5MsbWenY)
+
+
+
+[Here](https://github.com/zardosht/tracking2d) is the link to project source code. 
+
+
+
+# Lane detection using OpenCV (2020)
+description 
+
+video / image 
+
+
+github
+
+
+
+# Traffic Sign Classification (2020)
 description 
 
 video / image 
@@ -72,17 +93,7 @@ github
 
 
 
-## Lane detection using OpenCV (2020)
-description 
-
-video / image 
-
-
-github
-
-
-
-## Traffic Sign Classification (2020)
+# Behavioral Cloning for Autonomous Driving (2020)
 description 
 
 video / image 
@@ -93,7 +104,7 @@ github
 
 
 
-## Behavioral Cloning for Autonomous Driving (2020)
+# Tracking and Localization (2020)
 description 
 
 video / image 
@@ -104,7 +115,7 @@ github
 
 
 
-## Tracking and Localization (2020)
+# Path Planning for Autonomous Driving (2020)
 description 
 
 video / image 
@@ -115,32 +126,21 @@ github
 
 
 
-## Path Planning for Autonomous Driving (2020)
-description 
-
-video / image 
-
-
-github
-
-
-
-
-## ViewGuide (2018)
+# ViewGuide (2018)
 description 
 
 video / image 
 
 
 
-## MindSight (2017)
+# MindSight (2017)
 description 
 
 video / image 
 
 
 
-## iPaula (2016)
+# iPaula (2016)
 description 
 
 video / image 
@@ -148,21 +148,21 @@ video / image
 
 
 
-## MagicTouch (2016)
+# MagicTouch (2016)
 description 
 
 video / image 
 
 
 
-## BSB Navigator (2015) 
+# BSB Navigator (2015) 
 description 
 
 video / image 
 
 
 
-## Hack the Hotel (2015)
+# Hack the Hotel (2015)
 description 
 
 video / image 
