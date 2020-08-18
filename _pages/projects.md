@@ -86,7 +86,7 @@ For each frame in the input video the steps of a pipeline is are applied includi
 For each frame in the input video the steps of a pipeline is are applied including image processing, detection of the lanes, and estimation of lane curvature. The result of the pipeline is overlaid back on the original image.
 
 <iframe width="560" height="315"
-  src="https://www.youtube.com/watch?v=4jLnZ5f-2uQ" 
+  src="https://www.youtube.com/embed/4jLnZ5f-2uQ" 
   frameborder="0" 
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
   allowfullscreen>
