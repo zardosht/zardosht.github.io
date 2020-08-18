@@ -72,7 +72,7 @@ As part of [ISAR](#isar-an-authoring-system-for-interactive-tabletops-2018-2019)
   allowfullscreen>
 </iframe>
 
-
+<br/>
 
 
 [Here](https://github.com/zardosht/tracking2d) is the link to project source code. 
@@ -80,12 +80,37 @@ As part of [ISAR](#isar-an-authoring-system-for-interactive-tabletops-2018-2019)
 
 
 # Lane detection using OpenCV (2020)
-description 
+Detecting the lane lines under challenging real conditions, including lane cruvatures, change of lighting and lane colors, shadows, and different road conditions.
+For each frame in the input video the steps of a pipeline is are applied including image processing, detection of the lanes, and estimation of lane curvature. The result of the pipeline is overlaid back on the original image.
 
-video / image 
+For each frame in the input video the steps of a pipeline is are applied including image processing, detection of the lanes, and estimation of lane curvature. The result of the pipeline is overlaid back on the original image.
+
+<iframe width="560" height="315"
+  src="https://www.youtube.com/watch?v=4jLnZ5f-2uQ" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
 
 
-github
+**Steps:**
+* Camera calibration
+* Distortionn correction
+* Gradient and color thersholding
+* Perspective transform to rectify the image
+* Detecting lane pixels and fitting a polynomial
+* Detemining lane curvature and vehicle offset
+* Warping detected lane boudaries back to the original image
+* Visualizing lane boudaries and outputing lane curvature and vehicle offset
+
+<figure>
+  <img src="{{site.url}}/images/projects/lane_detection/lane_detection_steps.png" alt="Top row: Undistored Image, Combined RGB and HSV thresholding, Binary thresholding; Bottom row: warped binary image, detecting lane pixels using sliding window, fitting a polynomial to lane pixels."/>
+  <figcaption>Top row: Undistored Image, Combined RGB and HSV thresholding, Binary thresholding; Bottom row: warped binary image, detecting lane pixels using sliding window, fitting a polynomial to lane pixels.</figcaption>
+</figure>
+
+<br/>
+
+Source code of the project can be found [here](https://github.com/zardosht/Advanced_Lane_Finding_SDCP2).
 
 
 
