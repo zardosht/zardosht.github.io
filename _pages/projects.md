@@ -92,6 +92,7 @@ For each frame in the input video the steps of a pipeline is are applied includi
   allowfullscreen>
 </iframe>
 
+<br/>
 
 **Steps:**
 * Camera calibration
