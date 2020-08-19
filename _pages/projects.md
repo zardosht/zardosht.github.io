@@ -24,13 +24,8 @@ ISAR consists of camera-projector based interactive tabletop and an authoring en
   <figcaption>ISAR Authoring Environment and camera-project setup.</figcaption>
 </figure>
 
-<figure>
-  <img src="{{site.url}}/images/projects/isar/scene_projection.png" alt="The designed scene is projected on the tabletop. The annotations are rendered according to position and orientation of the detected physical objects."/>
-  <figcaption>The designed scene is projected on the tabletop. The annotations are rendered according to position and orientation of the detected physical objects.</figcaption>
-</figure>
 
-The application author creates an interactive application by defining the scenes and
-interaction rules. Each scene consists of different annotations, such as text, images, geometric shapes, videos and audio, etc., and physical objects. To design a scene the  application author directly sees a camera feed of the table and can test his application directly from the authoring environment. The annotations can be attached to the scene, or attached to the physical objects. In the latter case their rendering is changed depending on the position and orientation of the physical objects.
+The application author creates an interactive application by defining the scenes and interaction rules. Each scene consists of different annotations, such as text, images, geometric shapes, videos and audio, etc., and physical objects. To design a scene the  application author directly sees a camera feed of the table and can test his application directly from the authoring environment. The annotations can be attached to the scene, or attached to the physical objects. In the latter case their rendering is changed depending on the position and orientation of the physical objects.
 
 Beside the scenes, the application author also defines interaction rules. Interaction rules
 define the response of the table upon different interactions of the user, the form of “If EVENT then ACTION”. For example, the application author can define a rule that plays a sound as soon as an object appears on the table. Several templates for interaction rules are available in ISAR, and the set of events and actions can also be extended by a programmer. 
@@ -49,7 +44,7 @@ An  interactive application was created using ISAR to guide the user through a w
   <figcaption>A scene of mainboard assembly workflow. The part (CPU) is highlighted and an arrow shows the position of the CPU lock lever. A video also shows how to close the lock.</figcaption>
 </figure>
 
-ISAR can be used to create interactive applications that support medical rehabilitation. Such an application can be used for example for post stroke rehabilitation. The application consists of two games. In the first game, the user (e.g. a post stroke patient) should hit moving flies on the table. In the second application the user should follow a projected path on the table and gest scores on how well he could follow the path. In both cases interaction rules are defined for calculating feedback that is shown using a feedback annotation. 
+ISAR can be used to create interactive applications that support medical rehabilitation, for example post stroke rehabilitation. The application consists of two games. In the first game, the user (e.g. a post stroke patient) should hit moving flies on the table. In the second application the user should follow a projected path on the table and gest scores on how well he could follow the path. In both cases interaction rules are defined for calculating feedback that is shown using a feedback annotation. 
 
 <figure>
   <img src="{{site.url}}/images/projects/isar/rehab_games.png" alt="Hit the flies and follow the path game for rehabilitation."/>
@@ -114,12 +109,33 @@ Source code of the project can be found [here](https://github.com/zardosht/Advan
 
 
 # Traffic Sign Classification (2020)
-description 
 
-video / image 
+In this project, a convolutional neural networks is used to classify traffic signs. The model is trained and validated on [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset).
+
+The dataset consists of more that 51k images for 43 classes of German traffic signs (34799 training, 4410 validation, 12630 test). The images are cropped 32x32 RGB images of the traffic sign. The distribution of the training data is not uniform. With as few as about 180 images for classes like "0-Speed Limit (20 km/h)" or "19-Dangerous curve to the left", to around 2000 or more for classes like "3-Speed Limit (50 km/h)" or ""2-Speed Limit (30 km/h). Furthermore, the quality of some images are not good. For example the first 25 images for the class "19-Dangerous curve to the left" are almost black, with nothing recognizable with human eyes. 
+
+<figure>
+  <img src="{{site.url}}/images/projects/traffic_sign_classifier/training_set_distribution.png" alt="Training set distribution over classes."/>
+  <figcaption>Number of images per each individual class in the training set.</figcaption>
+</figure>
+
+<figure>
+  <img src="{{site.url}}/images/projects/traffic_sign_classifier/poor_sample.png" alt="A sample not recognizable with human eyes."/>
+  <figcaption>A sample not recognizable with human eyes.</figcaption>
+</figure>
 
 
-github
+I adapted LeNet for RGB images and number of classes in the traffic sign database. The model achieved good results for project requirements (96% accuracy on test set; project requirement was at least 93% accuracy on test set). 
+
+Figure below shows the results of manual testing on a set of images downloaded from Internet: 
+
+<figure>
+  <img src="{{site.url}}/images/projects/traffic_sign_classifier/results.png" alt="Results of manual testing on a sample set from Internet."/>
+  <figcaption>Results of manual testing on a sample set from Internet.</figcaption>
+</figure>
+
+
+The source code of the project can be found [here](https://github.com/zardosht/Traffic_Sign_Classifier_SDCP3)
 
 
 
