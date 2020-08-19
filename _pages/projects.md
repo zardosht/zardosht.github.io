@@ -196,7 +196,7 @@ The Path Planning component has the following main modules:
 
 The source code of the project can be found [here](https://github.com/zardosht/Path_Planning_SDCP7).
 
-
+<br/>
 
 # ViewGuide (2018)
 description 
@@ -204,6 +204,7 @@ description
 video / image 
 
 
+<br/>
 
 # MindSight (2017)
 description 
@@ -211,6 +212,7 @@ description
 video / image 
 
 
+<br/>
 
 # iPaula (2016)
 description 
@@ -218,14 +220,14 @@ description
 video / image 
 
 
-
+<br/>
 
 # MagicTouch (2016)
 description 
 
 video / image 
 
-
+<br/>
 
 # BSB Navigator (2015) 
 description 
