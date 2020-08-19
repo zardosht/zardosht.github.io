@@ -177,13 +177,24 @@ The source code of sensor fusion project can be found [here](https://github.com/
 
 
 # Path Planning for Autonomous Driving (2020)
-description 
+This project was about development of a Path Planning and Trajectory Generation component for an autonomous vehicle driving in a highway. 
 
-video / image 
+The vehicle drives in a simulator and the vehicle and environment data, including localization and tracking data of other vehicles are sent over a WebSocket to the path planning process. The goal is to drive the car safely around the simulator track with the highest possible speed, without any collision, and without exceeding maximum allowed total acceleration and jerk. 
+
+<figure>
+  <img src="{{site.url}}/images/projects/path_planning/safe_lane_change.gif" alt="Safe lane change."/>
+  <figcaption>A safe lane change manoeuver.</figcaption>
+</figure>
 
 
-github
+The Path Planning component has the following main modules:
 
+* Map: Contains a sparse map list of waypoints around the highway as well as some helper methods for converting coordinate and angle values.
+* Prediction: Takes the sensor fusion data from simulator and generates predictions about state of the road such as lane distance to front cars and lane blocked state.
+* Behavior Planning: Given the predictions, the Behavior Planner finds a best behavior by calculating a combined cost function for each possible behavior, and returning the behavior with the lowest cost. A behavior defines if the car should keep or change the lane and the target velocity for the AV. The cost function is a combination of various costs for example for speed, distance to the front car, lane change, etc. 
+* Trajectory Generation: Generates a trajectory for the best behavior respecting the collision, speed, acceleration, and jerk constraints.
+
+The source code of the project can be found [here](https://github.com/zardosht/Path_Planning_SDCP7).
 
 
 
