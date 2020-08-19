@@ -6,7 +6,7 @@ author_profile: true
 
 I list here some of the interesting recent and past projects I have worked on. Currently I am more interested in and learning about autonomous systems and computer vision. 
 
-
+<br/>
 
 # ISAR: An Authoring System for Interactive Tabletops (2018-2019)
 ISAR is an augmented Reality (AR) authoring system for interactive tabletops.
@@ -40,7 +40,7 @@ ISAR can be used to create interactive tabletop applications for different domai
 An  interactive application was created using ISAR to guide the user through a workflow of assembling a computer mainboard. Scenes were created for each step of the workflow. Each scene consisted of hints and guidance on how to perform the step, such as arrows that show where to place a part. Interaction rules defined the transition between scenes and if a part was missing or the wrong part was picked. 
 
 <figure>
-  <img src="{{site.url}}/images/projects/isar/mainboard_assembly.png" alt="A scene of mainboard assembly workflow. The part (CPU) is highlighted and an arrow shows the position of the CPU lock lever. A video also shows how to close the lock."/>
+  <img src="{{site.url}}/images/projects/isar/mainboard_assembly.png" alt="A scene of mainboard assembly workflow. The part (CPU) is highlighted and an arrow shows the position of the CPU lock lever. A video also shows how to close the lock." width=448px/>
   <figcaption>A scene of mainboard assembly workflow. The part (CPU) is highlighted and an arrow shows the position of the CPU lock lever. A video also shows how to close the lock.</figcaption>
 </figure>
 
@@ -53,8 +53,7 @@ ISAR can be used to create interactive applications that support medical rehabil
 
 The source code of ISAR can be found [here](https://github.com/zardosht/isar) and [here](https://www.youtube.com/watch?v=KyvFT0S5rww) is a short video demonstrating the system. 
 
-
-
+<br/>
 
 # 2D Object Tracking (2018)
 As part of [ISAR](#isar-an-authoring-system-for-interactive-tabletops-2018-2019), I wrote code for tracking of the objects put on the tabletop. The tracking code uses Yolo V2 for object detection. Pose estimation is done using feature matching (AKAZE features) and OpenCV's `estimateAffineTransform`. Pose refinement is done through image alignment using Enhanced Correlation Coefficient (ECC).
@@ -72,10 +71,10 @@ As part of [ISAR](#isar-an-authoring-system-for-interactive-tabletops-2018-2019)
 
 [Here](https://github.com/zardosht/tracking2d) is the link to project source code. 
 
-
+<br/>
 
 # Lane detection using OpenCV (2020)
-Detecting the lane lines under challenging real conditions, including lane cruvatures, change of lighting and lane colors, shadows, and different road conditions.
+Detecting the lane lines under challenging real conditions, including lane curvatures, change of lighting and lane colors, shadows, and different road conditions.
 For each frame in the input video the steps of a pipeline is are applied including image processing, detection of the lanes, and estimation of lane curvature. The result of the pipeline is overlaid back on the original image.
 
 For each frame in the input video the steps of a pipeline is are applied including image processing, detection of the lanes, and estimation of lane curvature. The result of the pipeline is overlaid back on the original image.
@@ -91,22 +90,22 @@ For each frame in the input video the steps of a pipeline is are applied includi
 
 **Steps:**
 * Camera calibration
-* Distortionn correction
-* Gradient and color thersholding
+* Distortion correction
+* Gradient and color thresholding
 * Perspective transform to rectify the image
 * Detecting lane pixels and fitting a polynomial
-* Detemining lane curvature and vehicle offset
-* Warping detected lane boudaries back to the original image
-* Visualizing lane boudaries and outputing lane curvature and vehicle offset
+* Determining lane curvature and vehicle offset
+* Warping detected lane boundaries back to the original image
+* Visualizing lane boundaries and outputting lane curvature and vehicle offset
 
 <figure>
-  <img src="{{site.url}}/images/projects/lane_detection/lane_detection_steps.png" alt="Top row: Undistored Image, Combined RGB and HSV thresholding, Binary thresholding; Bottom row: warped binary image, detecting lane pixels using sliding window, fitting a polynomial to lane pixels."/>
-  <figcaption>Top row: Undistored Image, Combined RGB and HSV thresholding, Binary thresholding; Bottom row: warped binary image, detecting lane pixels using sliding window, fitting a polynomial to lane pixels.</figcaption>
+  <img src="{{site.url}}/images/projects/lane_detection/lane_detection_steps.png" alt="Top row: Undistorted Image, Combined RGB and HSV thresholding, Binary thresholding; Bottom row: warped binary image, detecting lane pixels using sliding window, fitting a polynomial to lane pixels."/>
+  <figcaption>Top row: Undistorted Image, Combined RGB and HSV thresholding, Binary thresholding; Bottom row: warped binary image, detecting lane pixels using sliding window, fitting a polynomial to lane pixels.</figcaption>
 </figure>
 
 Source code of the project can be found [here](https://github.com/zardosht/Advanced_Lane_Finding_SDCP2).
 
-
+<br/>
 
 # Traffic Sign Classification (2020)
 
@@ -138,27 +137,42 @@ I adapted LeNet for RGB images and number of classes in the traffic sign databas
 The source code of the project can be found [here](https://github.com/zardosht/Traffic_Sign_Classifier_SDCP3)
 
 
-
-
-# Behavioral Cloning for Autonomous Driving (2020)
-description 
-
-video / image 
-
-
-github
-
+<br/>
 
 
 
 # Tracking and Localization (2020)
-description 
+In the first part of this project I used an Extended Kalman Filter to sensor fusion to estimate the 2D position and velocity of a vehicle from Radar and Lidar data. The image below shows an example: 
 
-video / image 
+<figure>
+  <img src="{{site.url}}/images/projects/tracking_and_localization/ekf_screen_recording.gif" alt="Estimating state of the vehicle using Extended Kalman Filter from Lidar and Radar measurements."/>
+  <figcaption>Estimating state of the vehicle using Extended Kalman Filter from Lidar and Radar measurements.</figcaption>
+</figure>
 
 
-github
+In the image above, the green triangles show the estimated state, the red circles are Lidar measurements `(x, y)` and the blue circles show Radar measurements (range, bearing, and range rate); an arrow (inside blue circle) points in the direction of the observed bearing.
 
+Our goal is to do sensor fusion using Kalman Filter (for Lidar measurement) and Extended Kalman Filter (for Radar measurement) to estimate the state (position and velocity), with RMSE less that a given upper bound and as low as possible.
+
+The second part of the project is the C++ implementation of a 2D particle filter localization. The image below shows the results tested in the simulator. The blue circle shows the estimated position of the car. The green lines show the ground trough measurement of the landmark measurements near the car. The blue lines show the predicted landmark measurement.
+
+<figure>
+  <img src="{{site.url}}/images/projects/tracking_and_localization/particle_filters_simulator.gif" alt="Particle filter localization."/>
+  <figcaption>Particle filter localization.</figcaption>
+</figure>
+
+A particle filter consists of a set of estimates of the system state (the particles) that are refined in a series of iterations. The particles are initialized using an initial rough estimate of the system state (for example a GPS localization in case of a self-driving car). In the light of sensor measurements, at each iteration, the particles that are most likely to have a correct estimated of the system state are chosen for the next generation. This process hopefully converges to a point that the set of all particles represent an accurate estimate of the posterior state of system. The idea of particle filters is very reminiscent of population-based meta-heuristics, such as evolutionary algorithms.
+
+To estimate the state of the system using noisy motion model and noisy senors observations, a particle filter continuously iterates the following steps:
+
+1. Prediction: predict the state of the system using previous state and the motion model
+2. Measurement Update: in light of the sensor measurements, assign each particle a weight that corresponds to its likelihood of representing a good estimate of the system state (an estimate that is in good adherence to the observation)
+3. Re-sample: select the particles for the next generation. The probability for a particle to be selected is proportional to its weight
+
+The source code of sensor fusion project can be found [here](https://github.com/zardosht/Extended_Kalman_Filters_SDCP5) and the source code of particle filter localization is [here](https://github.com/zardosht/Particle_Filter_Localization_SDCP6).
+
+
+<br/>
 
 
 
@@ -206,13 +220,4 @@ video / image
 description 
 
 video / image 
-
-
-
-# Hack the Hotel (2015)
-description 
-
-video / image 
-
-
 
