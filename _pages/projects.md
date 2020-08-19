@@ -112,12 +112,20 @@ Source code of the project can be found [here](https://github.com/zardosht/Advan
 
 In this project, a convolutional neural networks is used to classify traffic signs. The model is trained and validated on [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset).
 
-The dataset consists of more that 51k images for 43 classes of German traffic signs (34799 training, 4410 validation, 12630 test). The images are cropped 32x32 RGB images of the traffic sign. The distribution of the training data is not uniform. With as few as about 180 images for classes like "0-Speed Limit (20 km/h)" or "19-Dangerous curve to the left", to around 2000 or more for classes like "3-Speed Limit (50 km/h)" or ""2-Speed Limit (30 km/h). Furthermore, the quality of some images are not good. For example the first 25 images for the class "19-Dangerous curve to the left" are almost black, with nothing recognizable with human eyes. 
+<figure>
+  <img src="{{site.url}}/images/projects/traffic_sign_classifier/results.png" alt="Results of manual testing on a sample set from Internet."/>
+  <figcaption>Results of manual testing on a sample set from Internet.</figcaption>
+</figure>
+
+The dataset consists of more that 51k images for 43 classes of German traffic signs (34799 training, 4410 validation, 12630 test). The images are cropped 32x32 RGB images of the traffic sign. The distribution of the training data is not uniform. With as few as about 180 images for classes like "0-Speed Limit (20 km/h)" or "19-Dangerous curve to the left", to around 2000 or more for classes like "3-Speed Limit (50 km/h)" or ""2-Speed Limit (30 km/h). 
 
 <figure>
   <img src="{{site.url}}/images/projects/traffic_sign_classifier/training_set_distribution.png" alt="Training set distribution over classes."/>
   <figcaption>Number of images per each individual class in the training set.</figcaption>
 </figure>
+
+Also the quality of sample images differs a lot. Some images have very good lighting, are clear and sharp, and occlusion free. Some samples are very dark, are partially occluded, have noise (like stickers attached on the sign). The following figure is an example of a very dark sample, that is practically unrecognizable for human eye:
+
 
 <figure>
   <img src="{{site.url}}/images/projects/traffic_sign_classifier/poor_sample.png" alt="A sample not recognizable with human eyes."/>
@@ -126,14 +134,6 @@ The dataset consists of more that 51k images for 43 classes of German traffic si
 
 
 I adapted LeNet for RGB images and number of classes in the traffic sign database. The model achieved good results for project requirements (96% accuracy on test set; project requirement was at least 93% accuracy on test set). 
-
-Figure below shows the results of manual testing on a set of images downloaded from Internet: 
-
-<figure>
-  <img src="{{site.url}}/images/projects/traffic_sign_classifier/results.png" alt="Results of manual testing on a sample set from Internet."/>
-  <figcaption>Results of manual testing on a sample set from Internet.</figcaption>
-</figure>
-
 
 The source code of the project can be found [here](https://github.com/zardosht/Traffic_Sign_Classifier_SDCP3)
 
