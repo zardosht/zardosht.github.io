@@ -184,10 +184,10 @@ The vehicle drives in a simulator and the vehicle and environment data, includin
 
 The Path Planning component has the following main modules:
 
-* Map: Contains a sparse map list of waypoints around the highway as well as some helper methods for converting coordinate and angle values.
-* Prediction: Takes the sensor fusion data from simulator and generates predictions about state of the road such as lane distance to front cars and lane blocked state.
-* Behavior Planning: Given the predictions, the Behavior Planner finds a best behavior by calculating a combined cost function for each possible behavior, and returning the behavior with the lowest cost. A behavior defines if the car should keep or change the lane and the target velocity for the AV. The cost function is a combination of various costs for example for speed, distance to the front car, lane change, etc. 
-* Trajectory Generation: Generates a trajectory for the best behavior respecting the collision, speed, acceleration, and jerk constraints.
+* **Map**: Contains a sparse map list of waypoints around the highway as well as some helper methods for converting coordinate and angle values.
+* **Prediction**: Takes the sensor fusion data from simulator and generates predictions about state of the road such as lane distance to front cars and lane blocked state.
+* **Behavior Planning**: Given the predictions, the Behavior Planner finds a best behavior by calculating a combined cost function for each possible behavior, and returning the behavior with the lowest cost. A behavior defines if the car should keep or change the lane and the target velocity for the AV. The cost function is a combination of various costs for example for speed, distance to the front car, lane change, etc. 
+* **Trajectory Generation**: Generates a trajectory for the best behavior respecting the collision, speed, acceleration, and jerk constraints.
 
 The source code of the project can be found [here](https://github.com/zardosht/Path_Planning_SDCP7).
 
@@ -218,9 +218,25 @@ video / image
 <br/>
 
 # MagicTouch (2016)
-description 
+MagicTouch was a project to investigate the use of off-the-shelf and custom-made wearable technologies to improve workflows and productivity in an industrial setting.
 
-video / image 
+<figure>
+  <img src="{{site.url}}/images/projects/magic_touch/architecture.png" alt="Magic Touch architecture"/>
+  <figcaption>Magic Touch architecture. Information from environment sensors and the steps of the workflow are mediated through the middleware and displayed on the smart watch.</figcaption>
+</figure>
+
+Several features were investigated and implemented in this project that support a manual industrial workflow, including: 
+
+* **Workflow guidance:** The steps of a workflow were presented to the worker using a smart watch. This included text descriptions, images, and audio guidance. Different possibilities were also investigated for context-aware navigation through the steps of the workflow. For example picking of a part or special gesture patterns. 
+* **Integration with environment sensors:** Information collected from environment sensors were mediated by the middleware and displayed on the smart watch. For example in one scenario we showed values of a temperature sensor on the watch and triggered haptic feedback as soon as a target value was reached. In another scenario a distance sensor measured the position of worker's hand and as soon as the hand was at the right position a haptic feedback was triggered on the smart watch.  
+* **New interaction modalities:** Gesture detection using motion sensors on the watch were used to control navigation through the workflow. Haptic feedback of the watch were used to signal critical values and other important context information to the worker, e.g. when worker's hand is on top of the right box in a pick and place scenario. In another scenario where the worker needed to pour a liquid from a bottle into a container, gesture recognition was used to give the worker haptic notification when target value was reached.  
+* **Custom-made wearable and coordinated interaction using two wearable devices:** In a pick and place scenario, a custom-made wearable RFID detector was used to detect positioning of the hand on top of a target box, which in turn triggered haptic feedback on the smart watch worn on the other wrist. This scenario can be useful for example for workers with visual impairment. 
+
+<figure>
+  <img src="{{site.url}}/images/projects/magic_touch/screenshots.png" alt="Magic Touch screenshots"/>
+  <figcaption>Different views for presenting workflow steps and values from environment sensors. The image on top left shows a demonstrator setup including the distance sensor, picking bins, smart watch and custom made wearable RFID reader. The image on top right shows the sensor view for the liquid pouring scenario (the pouring gesture is detected and the watch gives haptic feedback when the target amount is reached).</figcaption>
+</figure>
+
 
 <br/>
 
@@ -228,16 +244,16 @@ video / image
 
 <figure>
   <img src="{{site.url}}/images/projects/bsb_navigator/bsb_building.png" alt="Bavarian State Library"/>
-  <figcaption>Bavarian State Library (Bayerische Staatsbibliothek.</figcaption>
+  <figcaption>Bavarian State Library (Bayerische Staatsbibliothek).</figcaption>
 </figure>
 
 In this project we developed an indoor navigation system based on Bluetooth Low Energy (BLE) beacons for Bavarian State Library (BSB). Bavarian State Library is one of the largest libraries in Germany with more that 3000 visitors per day and an area of more that 30,000 square meters on 5 floors. The library offers different facilities including books, magazine, and historical recordings. 
 
-I was the technical lead of a team of 7 students. We cooperated with an industrial partner that delivered UI design of the app. All other steps of the project, including research on the beacons, beacon-based indoor navigation library, installation of beacons, fingerprinting and mapping of the building, and development of the app was done by my team in a timeline of only 4 months.
+I was the technical lead of a team of 7 students. We cooperated with an industrial partner that delivered UI design of the app. All other steps of the project, including research on the beacons, BLE-based indoor navigation library, installation of beacons, fingerprinting and mapping of the building, and development of the app was done by my team in a timeline of only 4 months (Note also that the team could work full time on the project, because the students had other lectures and I had other projects too).
 
 <figure>
   <img src="{{site.url}}/images/projects/bsb_navigator/app_screenshots.png" alt="Screenshots of the app."/>
-  <figcaption>The app features browsing and navigation to several Point of Interests across 5 floors of the BSB.</figcaption>
+  <figcaption>The app features browsing and navigation to several Points of Interest (POI) across 5 floors of the BSB.</figcaption>
 </figure>
 
 This was one of the most challenging and interesting projects I did. On the one hand, the library building was part of the software. We had to do most of our development and testing activities inside the building. On the other hand, indoor navigation based on BLE beacons was not mature yet at the time. We had to research and find appropriate BLE beacons types, considering a long list of requirements such as accuracy and battery life. Another big challenge was installation of more than 250 BLE beacons and fingerprinting of the signal across all navigable area for localization. Despite all challenges, this project was very successful and the app [was published by BSB](https://www.bsb-muenchen.de/recherche-und-service/apps/bsb-navigator/) and went to production use.
