@@ -216,18 +216,40 @@ ViewGuide is built using Apple’s ARkit framework and WebRTC was used for handl
 <br/>
 
 # MindSight (2017)
-description 
+MindSight is three apps in one: crowd-sourced information aggregation and image labeling, image-based information retrieval, and augmented reality documentation. 
 
-video / image 
+Object recognition is an important part of every augmented reality application. Several databases exist to train object recognition models on everyday objects. However in order to train a model to recognize industrial objects and tools related to a large company, we need to create our own dataset that can be cumbersome and incomplete. MindSight provides a solution to this problem through crowd-sourced information aggregation and image labeling. Workers and employees of a large company can take photos of the industrial objects, label them, and upload them to a central database. Object Recognition models are then periodically trained on the newly arrived labeled images. Image datasets and the uploaded information can be further managed through a web application.
+
+<figure>
+  <img src="{{site.url}}/images/projects/mindsight/uploading_and_labeling.png" alt="MindSight uploading and labeling images."/>
+  <figcaption>Users of MindSight mobile app can take photos of objects, crop them, label them and upload them to image database. The image database and information attached to different object classes can be managed from a web application. Object recognition model is periodically trained on newly uploaded samples. </figcaption>
+</figure>
+
+
+The trained models can then be used for information aggregation and image-based information retrieval. As soon as the models recognize and object, the employees can upload information, such as documentation, comments, images, etc. for those objects. The object recognition can also be used to retrieve the crowd-uploaded information. The information can further be filtered based on context, such as GPS location of an object instance. 
+
+The retrieved information can then be accessed through ordinary mobile app UI, or projected right onto the object view through augmented reality. 
+
+<figure>
+  <img src="{{site.url}}/images/projects/mindsight/retrieval.png" alt="MindSight image-based information retrieval."/>
+  <figcaption>Trained object recognition model in the backend is used to recognize objects in the camera view of mobile app. By selecting the recognized object, a user can see related information to that object. The user can also upload new information. The information can also be viewed in AR mode on the object.</figcaption>
+</figure>
+
 
 
 <br/>
 
 # iPaula (2016)
-description 
+In iPaula we developed a mobile UI for a specific phase shift antenna. The antenna was developed by our industrial partner. The system consists of a pair of phase shift antennas that can provide high band-width over a long distance. The antennas must be in line of sight of each other and must be paired before communication can start. 
 
-video / image 
+I was the technical team lead of a team of 6 students. We developed a mobile app to control and pair the antennas and demonstrated two possible application scenarios. The mobile app communicated with antenna hardware via a custom protocol over Telnet. In the first demo application scenario we showed how large amount of information retrieved from remote field sensors can be collected by the antenna and presented on the app UI. We used a scenario for maintenance and repair of wind turbines for it. In the second scenario we showed how the antenna and the mobile app can be used to transmit HD video from a moving vehicle along with the sensor readings related to the car. 
 
+<figure>
+  <img src="{{site.url}}/images/projects/ipaula/ipaula_car.png" alt="Two antennas and the view of the app showing HD video stream and other sensor readings from the car."/>
+  <figcaption>Two antennas and the view of the app showing HD video stream and other sensor readings from the car. </figcaption>
+</figure>
+
+iPaula was one of the challenging and very interesting projects I did. The challenge in project was the custom hardware that we received late in the project. We had to code our app by mocking and simulating the hardware before we received it. Another challenge was in the very complex hardware setup we had to use for our demonstrators, consisting of both antennas and the networking setup. 
 
 <br/>
 
