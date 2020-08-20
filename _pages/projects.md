@@ -225,7 +225,26 @@ video / image
 <br/>
 
 # BSB Navigator (2015) 
-description 
 
-video / image 
+<figure>
+  <img src="{{site.url}}/images/projects/bsb_navigator/bsb_building.png" alt="Bavarian State Library"/>
+  <figcaption>Bavarian State Library (Bayerische Staatsbibliothek.</figcaption>
+</figure>
+
+In this project we developed an indoor navigation system based on Bluetooth Low Energy (BLE) beacons for Bavarian State Library (BSB). Bavarian State Library is one of the largest libraries in Germany with more that 3000 visitors per day and an area of more that 30,000 square meters on 5 floors. The library offers different facilities including books, magazine, and historical recordings. 
+
+I was the technical lead of a team of 7 students. We cooperated with an industrial partner that delivered UI design of the app. All other steps of the project, including research on the beacons, beacon-based indoor navigation library, installation of beacons, fingerprinting and mapping of the building, and development of the app was done by my team in a timeline of only 4 months.
+
+<figure>
+  <img src="{{site.url}}/images/projects/bsb_navigator/app_screenshots.png" alt="Screenshots of the app."/>
+  <figcaption>The app features browsing and navigation to several Point of Interests across 5 floors of the BSB.</figcaption>
+</figure>
+
+This was one of the most challenging and interesting projects I did. On the one hand, the library building was part of the software. We had to do most of our development and testing activities inside the building. On the other hand, indoor navigation based on BLE beacons was not mature yet at the time. We had to research and find appropriate BLE beacons types, considering a long list of requirements such as accuracy and battery life. Another big challenge was installation of more than 250 BLE beacons and fingerprinting of the signal across all navigable area for localization. Despite all challenges, this project was very successful and the app [was published by BSB](https://www.bsb-muenchen.de/recherche-und-service/apps/bsb-navigator/) and went to production use.
+
+<figure>
+  <img src="{{site.url}}/images/projects/bsb_navigator/beacons_and_fingerprinting.png" alt="Installing the BLE beacons and fingerprinting of the Bluetooth signal for localization and navigation."/>
+  <figcaption> We installed more that 250 BLE beacons across 5 floors of the BSB covering all the navigable area. After that, we had to measure the signal at every one to two meters of the navigable area and create a localization ground truth database. This process is called fingerprinting. Measuring and registering the signal took about 30 seconds at every single point. The result of fingerprinting is the ground truth database that contains statistical information about BLE signal at each point. This database is used for localization and navigation. 
+   </figcaption>
+</figure>
 
