@@ -198,9 +198,19 @@ The source code of the project can be found [here](https://github.com/zardosht/P
 <br/>
 
 # ViewGuide (2018)
-description 
+ViewGuide is a mobile Augmented Reality app that aims to improve realtime communication between field engineers and remote experts. The remote expert sees in realtime what the field engineer sees by sharing the video stream of the field engineer device. He can then use different annotations such as arrows and free drawing to guide the field engineer. The annotations drawing by remote expert are registered on the camera view of the field engineer. We did this project for one of our industrial partners and I was the technical lead of a team of 9 students. 
 
-video / image 
+<figure>
+  <img src="{{site.url}}/images/projects/viewguide/screenshots.png" alt="ViewGuide"/>
+  <figcaption>ViewGuide supports realtime remote collaboration through shared Augmented Reality sessions. The remote expert sees the realtime video feed of field engineer and annotates it. The AR annotations are registered back onto the camera view of field engineer. Remote expert can guide field engineer to bring his camera to a desired pose (bottom row left). A hands-free scenario is supported using a body-worn projector (bottom row right). </figcaption>
+</figure>
+
+ViewGuide is built using Apple’s ARkit framework and WebRTC was used for handling the peer to peer audio and video connection between users. Supported features include: 
+* **Remote AR annotations**: remote expert can add annotations on his device on top of the shared camera stream. That annotations are then registered to the camera view of the field engineer.
+* **Remote pose guidance**: remote expert can use his device to guide the field engineer to a specific camera pose. The relative movements of the expert's device are tracked using its motion sensors. These movements are then transformed and registered in 3D on the camera view of the field engineer. In this way the remote expert can guide the field engineer to move his device to reach a specific perspective (camera pose). 
+* **Offline statistics about annotations**: information about each remote support session are recorded and aggregate information about annotation positions are represented as a heatmap registered on the target scene. This feature is useful for understanding, analysis, and improvement of the design of industrial devices. 
+* **New interaction approaches**: remote expert can use Apple Pencil to change position and orientation of a virtual 3D arrow that is registered on the camera stream of field engineer in realtime. To enhance the remote communication, the gaze of remote expert is captured on his device and registered using a gaze icon on field engineer's camera stream. In this way the field engineer is aware of what remote expert is looking at as they communicate. In another scenario we used a body-worn projector to project the augmentations on the workspace of field engineer.
+* **3D reconstruction of the environment**: A 3D model of the environment is asynchronously generated on a server from images of the camera stream of the field engineer. The remote expert can see, investigate, and refer to this 3D model for better guidance. 
 
 
 <br/>
