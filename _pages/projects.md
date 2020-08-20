@@ -59,12 +59,7 @@ The source code of ISAR can be found [here](https://github.com/zardosht/isar) an
 As part of [ISAR](#isar-an-authoring-system-for-interactive-tabletops-2018-2019), I wrote code for tracking of the objects put on the tabletop. The tracking code uses Yolo V2 for object detection. Pose estimation is done using feature matching (AKAZE features) and OpenCV's `estimateAffineTransform`. Pose refinement is done through image alignment using Enhanced Correlation Coefficient (ECC).
 
 
-<iframe width="560" height="315"
-  src="https://www.youtube.com/embed/FpB5MsbWenY" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen>
-</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FpB5MsbWenY" allowfullscreen />
 
 <br/>
 
