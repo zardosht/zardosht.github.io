@@ -1,3 +1,5 @@
 _site/
 
 __development
+.bundle
+vendor
